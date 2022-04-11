@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="etiqueta1"> Prueba </p>
+    <ul id="lista_din"></ul>
+    
+    <script>
+        // document.querySelector(".etiqueta1").textContent="Parrafo_dinamico"
+        
+        // 
+        // const li= document.createElement("li")
+        // li.textContent ="Hey, esto es una lista dinamica :D"
+
+        // lista.appendChild(li)
+        // iteracion por arrays
+
+        const lista =document.getElementById("lista_din")
+        const arrayItem = ["item 1", "item 2", "item 3", "item 4", "item 5", "item 6"]
+
+        // arrayItem.forEach((item) => {
+        //     const li = document.createElement("li")
+        //     li.textContent = item
+        //     lista.appendChild(li)
+        // })
+
+        arrayItem.forEach((item) => {
+
+            arrayItem.forEach((item) => {
+
+                lista.innerHTML += `<li> ${item} </li>`
+            })
+        })
+
+
+    </script>
+</body>
+</html>
